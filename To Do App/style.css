@@ -1,0 +1,103 @@
+/* 1. Overall Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #153677, #4e085f);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 2. The Main Card */
+.todo-app {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+}
+
+h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todoicon {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* 3. Input and Button Styling */
+#task {
+    width: 70%;
+    border: none;
+    outline: none;
+    background: #edeef0;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: -40px; /* Overlaps slightly for a cleaner look */
+}
+
+/* 4. The List Items (Crucial for your JS) */
+#list-container {
+    margin-top: 30px;
+    padding: 0;
+}
+
+#list-container li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 10px;
+    user-select: none;
+    cursor: pointer;
+    display: flex;       /* This aligns everything in a row */
+    align-items: center; /* This centers them vertically */
+    border-bottom: 1px solid #eee;
+}
+
+/* 5. Styling the elements you created in JS */
+.task-check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    accent-color: #ff5945; /* Colors the checkbox */
+}
+
+.delete-btn {
+    margin-left: auto; /* This pushes the 'X' to the far right */
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: #555;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background: #edeef0;
+    color: #ff5945;
+}
